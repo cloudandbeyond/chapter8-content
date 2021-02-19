@@ -1,3 +1,3 @@
-INSERT INTO customer (name, address, products, payment) VALUES ('John Doe', '1000 Yonge St, Toronto, ON', 'Home', 'Visa');
-INSERT INTO customer (name, address, products, payment) VALUES ('Jane Walker', '2020 Burnhamthorpe Rd W, Mississauga, ON', 'Auto', 'Mastercard');
-INSERT INTO customer (name, address, products, payment) VALUES ('Nav Chaudhry', '19880 Richmond St, London, ON', 'Home', 'PreAuth');
+INSERT INTO customer (name, address, products, payment, code) VALUES ('John Doe', '1000 Yonge St, Toronto, ON', 'Home', 'Visa', '2846');
+INSERT INTO customer (name, address, products, payment, code) VALUES ('Jane Walker', '2020 Burnhamthorpe Rd W, Mississauga, ON', 'Auto', 'Mastercard', '6547');
+INSERT INTO customer (name, address, products, payment, code) VALUES ('Nav Chaudhry', '19880 Richmond St, London, ON', 'Home', 'PreAuth', '2358');

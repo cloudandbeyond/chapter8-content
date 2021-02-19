@@ -16,7 +16,7 @@ public class Customer {
     private String address;
 	private String products;
 	private String payment;
-
+	private String code;
 
 
     public long getId() {
@@ -58,6 +58,15 @@ public class Customer {
 	public String getPayment() {
         return payment;
     }
+	
+	public void setCode(String code) {
+        this.code = code;
+    }
+	
+	public String getCode() {
+        return code;
+    }
+
 
 
     @Override
@@ -66,13 +75,11 @@ public class Customer {
         if (o == null || getClass() != o.getClass()) return false;
         Customer customer = (Customer) o;
         return Objects.equals(name, customer.name) &&
-                Objects.equals(address, customer.address) &&
-					Objects.equals(products, customer.products) &&
-						Objects.equals(payment, customer.payment);
+                Objects.equals(address, customer.address);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, address, products, payment);
+        return Objects.hash(name, address, products, payment, code);
     }
 }
